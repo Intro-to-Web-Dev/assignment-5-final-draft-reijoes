@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <!--Three main improvements that I have made to my site are
+
+            1. Adding a Dark Mode button, the addition of this button makes for a better UX as the user may choose how they want the site to look. 
+                The dark mode is easier on the eyes in my opinion      
+
+            2. Changing text colors around the website in order to gain more contrast from the background, this was done in light and dark mode, and effects
+                the navigation text, product and company names, and products/prices on the checkout screen
+
+            3. The final improvement from assignment 4 is the addition of more pages, like the customer service page and brand showcase page.-->
+            
+        <meta charset="UTF-8">
+        <meta name="description" content="Brand Page">
+        <meta name="keywords" content="brands">
+        <meta name="author" content="Joel Reid">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brand Showcase</title>
+        <link rel="stylesheet" href="./css/style.css">   
+        <style>
+            #flexcontainer{
+                    display: flex;
+                    grid-area: 3/3/5/4;
+                    flex-wrap: wrap;
+                    padding-bottom: 75px;
+                    justify-content: center;
+                    flex-direction: row;
+                    margin-top: 50px;
+            }
+        </style>     
+    </head>
+    <body id="gridbox">
+        <div id="headerbg"></div>  
+        <header>   
+            <a href="./layout.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
+            <img src="./img/moon.png" alt="dark mode moon" id="butn">
+            <a href="./layout_two.html" id="cart"><img src="./img/cart.png" alt="Shopping Cart"> </a> 
+            <img src="./img/magnifying.png" alt="Search Icon" id="glass"> 
+            <input id="searchbox" placeholder="Search..">          
+        </header>
+        <section id="namefield">
+            <h1>Popular Brands</h1>
+        </section>
+        <nav>
+            <a href="./layout.html" class="navtxt"><p style="grid-area: 1/1/2/2;" id="productstxt">Products</p></a>
+            <a href="./layout_four.html" class="navtxt"><p style="grid-area: 2/1/3/2;">Brand Showcase</p></a>
+            <a href="./layout_three.html" class="navtxt"><p style="grid-area: 3/1/4/2;">Resources and Tools</p></a>
+            <a href="./layout_five.html" class="navtxt"><p style="grid-area: 4/1/5/2;">Customer Service</p></a>
+        </nav>
+        <div id="flexcontainer">
+            <div class="box">
+                 <img src="./img/nvidia.png" alt="" class="pcpart">
+                 <p class="label">NVIDIA</p>
+            </div>
+            <div class="box">
+                <img src="./img/amd.png" alt="" class="pcpart"  style="width: 85%;">
+                <p class="label">AMD</p>
+            </div>
+            <div class="box">
+                <img src="./img/intel.png" alt="" class="pcpart">
+                <p class="label">intel</p>
+            </div>
+            <div class="box">
+                <img src="./img/corsair.png" alt="" class="pcpart">
+                <p class="label">Corsair</p>
+            </div>
+            <div class="box">
+                <img src="./img/logitech.png" alt="" class="pcpart" style="width: 90%;">
+                <p class="label">Logitech</p>
+            </div>
+            <div class="box">
+                <img src="./img/msi.png" alt="" class="pcpart">
+                <p class="label">msi</p>
+            </div> 
+        </div>
+        <footer>
+            <p>PC Scrapyard</p> 
+            <div id="footerflex">     
+                <h2>FAQ</h2>
+                <h2>Contact Us</h2>
+                <h2>Privacy Policy</h2>
+                <h2>Terms and Conditions</h2>
+            </div>    
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

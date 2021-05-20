@@ -1,0 +1,477 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+@font-face {
+    font-family: 'ComputerFont';
+    src: url(/font/AldotheApache.ttf); 
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#gridbox{
+    display: grid;
+    grid-template: 50px 70px 1fr 100px/ 1fr 160px 70% 1fr; 
+	background-color: #f1f3f8;
+}
+header{
+    grid-area: 1/2/2/4;
+}
+#headerbg{
+	background: #8d93ab;
+	grid-area: 1/1/2/5;
+}
+#logo{
+	margin-top: 2.5px;
+	margin-left: 5px;
+	width: 45px;
+}
+#cart{
+	float: inline-end;	
+	margin-top: 10px;
+	margin-right: 35px;
+	width: 38px;
+}
+#glass{
+	float: inline-end;
+	margin-right: 5%;
+	margin-top: 10px;
+	width: 30px;
+}
+#searchbox{
+	float: inline-end;
+	width: 27%;
+	height: 20px;
+	min-width: 170px;
+	margin-right: 10px;
+	margin-top: 12px;
+	box-shadow: 2px 2px gray;
+	background-color: #d6e0f0;
+}
+#searchtext{
+	color: darkgray;
+	font-size: 14pt;
+}
+#namefield{
+	display: flex;
+	grid-area: 2/1/3/5;
+	border-bottom: 2px solid gray;
+	justify-content: center;
+}
+/*
+h1 headings will be the text near the top of the screen describing the current page the user is on 
+*/
+h1{
+	align-self: flex-end;	
+	font-size: 22pt;
+	margin-left: 180px;
+	color: gray;
+	font-weight: bold;	
+	font-family: 'ComputerFont';
+}
+#flexcontainer{
+	display: flex;
+	grid-area: 3/3/5/4;
+	flex-wrap: wrap;
+	padding-bottom: 75px;
+	justify-content: center;
+	flex-direction: row;
+}
+.box{
+	display: flex;
+	height: auto;
+	width: 23%;
+	min-width: 170px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 40px;
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.pcpart{
+	height: auto;
+	width: 100%;
+}
+.label{
+	font-size: 13pt;
+	
+}
+nav{
+	display: grid;
+	grid-area: 3/2/4/3;
+	margin-top: 30px;
+	height: 250px;
+	background-color: #6f747c;
+}
+.navtxt{
+	padding-top: 15px;
+	padding-left: 5px;
+	font-size: 14pt;
+	border: 1px solid gray;
+	text-decoration: none;
+	color: white;
+}
+footer{
+    background-color: #393b44;
+	position: fixed ;
+	left: 0 ;
+	bottom: 0 ;
+	width: 100%;
+}
+footer p{
+	font-size: 22pt;
+	text-align: center;
+	color: lightgrey;
+	font-weight: bold;
+}
+#footerflex{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/*
+h2 headings are used for the different headings within the footer
+*/
+h2{
+	margin-top: 15px;
+	margin-bottom:10px;
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	font-size: 14pt;
+	color: lightgrey;
+	font-weight: bold;
+	font-family: 'ComputerFont';
+}
+#gridcontainer{
+	grid-area: 3/3/4/4;
+	display: grid;
+	grid-template: 60px 1fr 1fr 1fr 80px 60px/ 1fr;
+	margin-left: 40px;
+}
+#grid1{
+	grid-area: 1/1/2/2;
+	border-bottom: 2px solid darkgray;
+}
+#grid2{
+	display: flex;
+	justify-content: space-between;
+	grid-area: 2/1/3/2;
+	border-bottom: 2px solid darkgray;
+}
+#grid3{
+	display: flex;
+	justify-content: space-between;
+	grid-area: 3/1/4/2;
+	border-bottom: 2px solid darkgray;
+}
+#grid4{
+	display: flex;
+	justify-content: space-between;
+	grid-area: 4/1/5/2;
+	border-bottom: 2px solid darkgray;
+}
+#grid5{
+	grid-area: 5/1/6/2;
+	border-bottom: 2px solid darkgray;
+}
+#grid6{
+	grid-area: 6/1/7/2;
+}
+#shoppingbutton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 160px;
+	float: right;
+	border: 1px solid black;
+	margin-top: 7px;
+	background-color: #6f747c;
+	text-decoration: none;
+}
+#shoppingbutton:hover{
+	background-color: gray;
+}
+#currentcart{
+	font-size: 16pt;
+	color: black;
+	margin-top: 30px;
+	font-weight: bold;
+}
+#shoppingtext{
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+
+}
+.chckoutimgbox{
+	margin-top: 10px;
+	width: 15%;
+	min-width: 100px;
+	height: auto;
+
+}
+.checkoutimg{
+
+	margin: auto;
+	height: auto;
+	width: 100%;
+}
+.checkoutpart{
+	align-self: flex-end;
+	font-size: 16pt;
+	color: black;
+	font-weight: bold;
+}
+.price{
+	align-self: flex-end;
+	font-size: 16pt;
+	color: black;
+	font-weight: bolder;
+}
+#total{
+	float: inline-end;
+	margin-top: 50px;
+	font-size: 17pt;
+	color: black;
+	font-weight: bolder;
+}
+#totaltext{
+	float: left;
+	color: black;
+	font-weight: bolder;
+	font-size: 23pt;
+	margin-top: 50px;
+}
+#paymentbutton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 240px;
+	float: right;
+	border: 1px solid black;
+	margin-top: 7px;
+	background-color: #6f747c;
+}
+#paymentbutton:hover{
+	background-color: gray;
+}
+#paymenttext{
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+}
+#resourcecontainer{
+	display: flex;
+	flex-direction: column;
+	grid-area: 3/3/4/4;
+	margin-left: 100px;
+	justify-content: space-evenly;
+	height: 700px;
+}
+/*
+h3 headings are used for the resources page as the header for each section of text
+*/
+h3{
+	font-size: 15pt;
+	text-decoration: underline;
+	font-family: 'ComputerFont';
+}
+.info{
+	font-size: 18px;
+}
+#divbox{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid gray;
+    box-shadow: 15px 10px 10px lightgrey;
+    padding-left: 50px;
+    padding-right: 50px;   
+    padding-bottom: 30px;
+	text-align: center;
+	background-color: #d6e0f0;
+}
+#sign{
+	font-weight: bold;
+	font-size: 16pt;
+	margin-bottom: 40px;
+}
+.pageimg{
+	width: 60%;
+	height: auto;
+	border: 2px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#toptext{
+	font-size: 14pt;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+nav a:hover{
+	background-color: gray;
+
+}
+#butn{
+	width: 35px;
+	margin-left: 25px;
+	margin-bottom: 5px;
+}
+
+/*smaller than 1024 pixels*/
+@media screen and (max-width: 1024px) {
+	#resourcecontainer{
+		display: flex;
+		flex-direction: column;
+		grid-area: 3/3/4/4;
+		margin-left: 100px;
+		justify-content: space-evenly;
+		height: 600px;
+	}
+/* smaller than 768 pixels */
+@media screen and (max-width: 768px) {
+
+	nav{
+		display: flex;
+		grid-area: 2/1/3/5;
+		height: 50px ;
+		width: 400px ;
+		background-color: #6f747c;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4,1fr);
+		margin-top: 5px;
+		text-align: center;
+		justify-self: center;
+	}
+	.navtxt{
+		padding-top: 5px;
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 14pt;
+		border: 1px solid gray;
+	
+	}
+	
+
+	#productstxt{
+		padding-top: 15px !important;
+	}
+	#flexcontainer{
+		grid-area: 3/2/5/4 !important;
+	}
+	#gridbox{
+		grid-template: 50px 100px 1fr 100px/ 1fr 160px 70% 1fr; 
+	}
+	h1{
+		align-self: flex-end;	
+		font-size: 22pt;
+		margin-left: 0px !important;
+		color: gray;
+		font-weight: bold;	
+		font-family: 'ComputerFont';
+	}	
+	#gridcontainer{
+		grid-area: 3/1/4/4;
+		display: grid;
+		grid-template: 60px 1fr 1fr 1fr 80px 60px/ 1fr;
+		margin-left: 20px !important;
+		margin-right: 20px;
+	}
+	.checkoutpart{
+		align-self: flex-end;
+		font-size: 12pt !important;
+		color: black;
+		font-weight: bold;
+	}
+	#resourcecontainer{
+		display: flex;
+		flex-direction: column;
+		grid-area: 3/1/4/4;
+		margin-left: 50px;
+		margin-right: 20px;
+		justify-content: space-evenly;
+		height: 475px;
+	}
+
+}
+}
+/* smaller than 480 pixels */
+@media screen and (max-width: 480px) {
+	nav{
+		margin-right: 20px !important;
+	}	
+	#gridcontainer{
+		grid-area: 3/1/4/4;
+		display: grid;
+		grid-template: 60px 1fr 1fr 1fr 80px 60px/ 1fr;
+		margin-left: 8px !important;
+	}
+	.checkoutpart{
+		align-self: flex-end;
+		font-size: 10pt !important;
+		color: black;
+		font-weight: bold;
+	}
+	#gridcontainer{
+		grid-area: 3/1/4/4;
+		display: grid;
+		grid-template: 60px 1fr 1fr 1fr 80px 60px/ 1fr;
+		margin-left: 20px !important;
+		margin-right: 40px;
+	}
+	#resourcecontainer{
+		display: flex;
+		flex-direction: column;
+		grid-area: 3/1/4/4;
+		margin-left: 50px;
+		margin-right: 20px;
+		justify-content: space-evenly;
+		height: 400px;
+		margin-right: 35px;
+	}
+}
